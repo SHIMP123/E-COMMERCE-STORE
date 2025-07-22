@@ -1,0 +1,33 @@
+//HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Main section -->
+    <h1>STORE</h1>
+    <button type="button" id="view-cart" onclick="checkCart()">🛒View Cart</button>
+    <div scanProduct>
+        <input type="text" id="searchProduct" placeholder="Search for products...">
+        <button type="button" onclick="fetchProduct()" class="btnSearch">🔍</button>
+    </div>
+
+    <!-- Product section -->
+    <div id="product-section" >
+        <p>Products</p>
+    </div>
+
+    <!-- Cart section(initially hidden) -->
+    <div id="cart-section" class="cart-sect" style="display: none;">
+        <h1 id="crts">Your Cart</h1>
+        <div id="your-cart"></div>
+        <button type="button" id="backToShop">🔙To shop</button>
+    </div>
+    <script src="ecom.js"></script>
+</body>
+</html>
